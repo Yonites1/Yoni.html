@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        #wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            background-color: rgb(202, 224, 243);
+            border: 5px solid orange;
+        }
+        #nav {
+            grid-column: 2/4;
+            grid-row: 1/2;
+        }
+        #header{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        #content {
+            grid-column: 2/4;
+            grid-row: 2/4;
+            
+        }
+        #sidebar { 
+            grid-column: 1/2;
+            grid-row: 2/4;
+         }
+
+         #footer { 
+            grid-column: 1/4;
+            grid-row: 1/5;
+         }
+    </style>
+</head>
+<body>
+    <main id="wrapper"> 
+        <nav id="nav"> 
+            <ul type="none"> 
+            <li> Menu</li>
+            <li> Specials</li>
+            <li> Live Music and Events</li>
+            <li> Private Party</li>
+        </ul> 
+    </nav>
+        <section id="header"> <h1> The Rabit Hole Bar</h1> </section>
+        <section id="Content"> <P>The Rabit Hole Bar 
+            <img src="RH1.png" width="200px" height="200px" alt= 
+            "the image is only for decoration"> <P></P> 
+        </section>
+        <section id="Sidebar"> 
+            <p> For more info <a href="#">...</a></p>
+        </section>
+        <footer id="Footer">
+            &copy; All rights are reserved. 
+        </footer>
+            
+
+     
+    </main>
+    
+</body>
+</html> 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <title>Box Model</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="utf-8">
+        <meta name="description" content="Box Model Manipulation using css.">
+    
+        <style> 
+        .wrapper {
+         display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+            #section1 {
+              border: 5px solid black;
+              margin: 10px;
+              padding: 10px 30px 20px 30px; /* Top, right, bottom and left */
+              width: 100%;
+              /* 1 em 12px */
+              font-size: 12px;
+            }
+            #section2 {
+              border: 10px solid black;
+              margin: 10px;
+              padding: 10px;
+              box-sizing: border-box;
+              width: 10em;
+               /* 1 em 12px */
+               font-size: 12px;
+            }
+            #section3 {
+              border: 10px solid black;
+              margin: 10px;
+              padding: 10px;
+            }
+      
+          </style>
+          </head>
+    <body> 
+        <main class="wrapper"> 
+            <section id="section1"> My goal with photography is to capture that
+                feeling of exploring a new place for the very first time — 
+                freezing it to be shared and re-lived over and over again. 
+            </section>
+
+            <section id="section2"> If you like what you see in my portfolio, 
+                you’re going to love your photos. I believe every picture I
+                 take and give you should be frame-worthy. I look forward to 
+                 creating wonderful memories for you. 
+                </section>
+            <section id="section3"> Let's begin the journey together
+
+            </section>
+    
+        </main>
+    </body>
+    <footer> </footer>
+</html>

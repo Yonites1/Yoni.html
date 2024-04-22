@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: auto auto auto;
+        background-color: #e5e5e5;
+        height: 100vh;
+        width: 100vw;
+        gap: 10px;
+    
+    }
+
+    .wrapper2 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: blue;
+        width: 1000px;
+        height: 100px;
+        box-sizing: content-box;
+
+    }
+    
+   
+     .header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 5px;
+      
+
+        }
+    
+    .nav {
+        grid-column: 1/4;
+        grid-row: 1/2
+        
+        
+        
+     
+    }
+    .sidebar1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: #cdd0d5;
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        margin-left: 70px;
+    }
+    .Desserts {
+        background-color: rgb(255, 255, 255);
+            color: #8090bb;
+            margin: 50px;
+            text-align: center;
+            text-decoration: solid;
+            border: solid 1px #62696f;
+            padding: 10px;
+            border-radius: 5px;
+            
+    }
+    .MoreInfo{
+        background-color: rgb(255, 255, 255);
+            color: #8090bb;
+            margin: 50px;
+            text-align: center;
+            text-decoration: solid;
+            border: solid 1px #62696f;
+            padding: 10px;
+            border-radius: 5px;
+    }
+    .content {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: #ffffff;
+       
+        color: rgb(0, 0, 0);
+        margin-left: 50px;
+        padding: 5px;
+        padding-top: 10px;
+        
+    }
+    .sidebar2 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-color: #cdd0d5;
+       
+        color: #949fba;
+        text-align: center;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 5px;
+        
+    }
+
+     
+    .footer {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        text-align: center;
+        padding-top: 20px;
+        background-color: #ffffff;
+        height: 80px;    }
+
+      /* Media query for responsiveness */
+  @media (min-width: 768px) {
+            .Nav ul {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }      
+    }
+        
+    @media (max-width: 768px){
+         .Nav ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+    }
+</style>
+<body>
+    <main class="wrapper"> 
+
+    
+
+            <nav class="Nav"><ul type="none"> 
+                <li> <p1 style="border: solid 2px #62696f; border-radius: 5px; color: #7e8db7; padding: 5px; background-color: #ffffff;"> Home </p1></li>
+                <li> <p1 style="border: solid 2px #62696f; border-radius: 5px; color: #7e8db7; padding: 5px; background-color: #ffffff;"> Who we are </p1> </li>
+                <li> <p1 style="border: solid 2px #62696f; border-radius: 5px; color: #7e8db7; padding: 5px; background-color: #ffffff;"> Menu  </p1> </li>   
+            </ul> 
+            </nav>
+      
+
+        <section class="header"> 
+                <h1> <img src="RH1.png" width="50px" height="50px" alt= 
+                    "the image is only for decoration"> RC Awards LLC</h1>
+        </section>
+
+   
+
+        <section class="sidebar1"> 
+            
+            <p class="Desserts"> Desserts</p>
+            <p class="MoreInfo"> More Info</p>
+
+        </section>
+
+        <section class="content"> 
+            <p>  Looking for a specific item or just browsing for ideas? 
+                RC Awards is your one-stop shop for promotional products and business gifts. Our extensive 
+                range of promo products will ensure you find something to suit your requirements.
+                With 1000s of selections, RC Awards offers branded merchandise to fulfill all of your needs.
+                 </p>
+                 <br>
+                 <p> Put our knowledge about promotional products to work for you. With high quality promotional
+                  products, fast delivery times, and prices to fit all budgets, we will provide customized, 
+                  relevant recommendations for you. Simply take a look around or contact us now and we'll do 
+                  the shopping for you! </p>         
+
+        </section>
+
+        <section class="sidebar2"> 
+            
+            <form action="/login" method="post">
+                <label for="Username"> <h3 style="border: solid 2px #62696f;  border-radius: 5px;"> Username</h3></label>
+                <input type="text" id="username" name="Username" required> 
+                
+                <label for="Password"> <h3 style="border: solid 2px #62696f; border-radius: 5px;">Password</h3></label>
+                <input type="text" id="Password" name="Password" required><br>
+                <input type="submit" value="Login">
+                
+
+        </section>
+        <section class="footer">
+            <h5> &copy; All rights are reserved. </h5>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>

@@ -5,62 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <style>
-        #wrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 5px;
-            background-color: rgb(202, 224, 243);
-            border: 5px solid orange;
-        }
-        #nav {
-            grid-column: 2/4;
-            grid-row: 1/2;
-        }
-        #header{
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-        #content {
-            grid-column: 2/4;
-            grid-row: 2/4;
-            
-        }
-        #sidebar { 
-            grid-column: 1/2;
-            grid-row: 2/4;
-         }
 
-         #footer { 
-            grid-column: 1/4;
-            grid-row: 1/5;
-         }
+      #wrapper {
+        display: grid;
+        grid-template-columns: repeat (3,1fr);
+        grid-template-rows: 1fr  1fr 1fr 1fr;
+        gap: 20px;
+        background-color: rgb(202, 224, 243);
+        border: 5px solid orange;
+        height: 100vh;
+        width: 100vw;
+       }  
+
+       #header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        padding-left: 5px
+      
+    }
+       #nav{
+        grid-column: 2/4;
+        grid-row: 1/2;
+       }
+
+
+    /* Media query for responsiveness */
+         @media (min-width: 768px) {
+            #nav ul {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+            }      
+    }
+        
+    @media (max-width: 768px){
+            #nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+    }
+       #content {
+        grid-column: 2/4; 
+        grid-row: 2/4;
+        text-align: center;
+
+       }
+      
+        #sidebar {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        text-align: center;
+       }
+       #footer {
+        grid-column: 1/4;
+        grid-row: 4/5;
+        text-align: center;
+        padding-left: 500px;
+        
+    }
+     
+       
     </style>
 </head>
 <body>
+
     <main id="wrapper"> 
-        <nav id="nav"> 
-            <ul type="none"> 
+
+        <nav id="nav"><ul type="none"> 
             <li> Menu</li>
             <li> Specials</li>
             <li> Live Music and Events</li>
             <li> Private Party</li>
         </ul> 
     </nav>
-        <section id="header"> <h1> The Rabit Hole Bar</h1> </section>
-        <section id="Content"> <P>The Rabit Hole Bar 
-            <img src="RH1.png" width="200px" height="200px" alt= 
-            "the image is only for decoration"> <P></P> 
-        </section>
-        <section id="Sidebar"> 
-            <p> For more info <a href="#">...</a></p>
-        </section>
-        <footer id="Footer">
+        <section id="header"> <h1> The Rabit Hole Bar</h1></section>
+    </section>
+        
+        <section id="content"> <h1> <img src="RH2.png" width="75%" height="auto">  <br> DOG RULES</h1> 
+            <p> Our front patio is dog-friendly and human-friendly.
+                Dogs are only allowed on the front patio and are not
+                allowed inside or on the back patio, with the exception
+                of service animals. Dogs must be on a leash and well-behaved 
+                 at all times, even if their owner is not. All four paws must 
+                 remain on the ground at all times. Sitting on laps is not acceptable.
+                  </p>
+        </section> 
+   
+       
+        <section id="sidebar"> 
+            <h1> <img src="RH1.png" width="60%" height="auto"> <br> 
+                HISTORY</h1> <P> I'm Yonathan.
+                I’m professional photographer living in the 'America's Finest City', San Diego. 
+                I feel so lucky to get to do what I love for the past 8 years. I feel honored 
+                to share your special moments with you. I like to keep things simple. 
+                If you like what you see in my portfolio, you’re going to love your
+                photos. I feel honored to share your special moments with you. I like to keep things simple. 
+                If you like what you see in my portfolio, you’re going to love your
+                photos.  I feel honored to share your special moments with you. I like to keep things simple. 
+                If you like what you see in my portfolio, you’re going to love your
+                 photos. </P>
+        <br>
+        <footer id="footer">
+           
             &copy; All rights are reserved. 
-        </footer>
-            
 
-     
+        </footer>
+          
     </main>
     
 </body>
